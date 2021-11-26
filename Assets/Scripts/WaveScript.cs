@@ -28,7 +28,7 @@ public class WaveScript : MonoBehaviour
 
  
 
-        //Normaler Arm wird ausgeblendet, solange der Knopf gedrückt ist. 
+        //Normaler Arm wird ausgeblendet, solange Leertaste gedrückt ist. 
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -42,7 +42,7 @@ public class WaveScript : MonoBehaviour
 
 
 
-        //Winkender Arm wird angezeigt, solange der Knopf gedrückt ist. 
+        //Winkender Arm wird angezeigt, solange die Leertaste gedrückt ist. 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             WaveArm.SetActive(true);
