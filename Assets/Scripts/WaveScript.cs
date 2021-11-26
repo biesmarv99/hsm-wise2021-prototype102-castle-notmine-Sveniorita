@@ -5,11 +5,16 @@ using UnityEngine;
 public class WaveScript : MonoBehaviour
 {
 
+    //Hintergrund fährt von rechts nach links durch das Bild, Player läuft auf der Stelle
+    //Random Geist spawnd und fährt von rechts nach links durch das Bild
+    //Geist reagiert auf das Winken und Tür öffnet sich - Level geschafft
+
+
     // Arme initialisieren
     public GameObject NormalArm;
     public GameObject WaveArm;
-   
 
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +26,10 @@ public class WaveScript : MonoBehaviour
     void Update()
     {
 
+ 
+
         //Normaler Arm wird ausgeblendet, solange der Knopf gedrückt ist. 
-      
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             NormalArm.SetActive(false);
